@@ -1,0 +1,143 @@
+.home-container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  margin-bottom: 26px;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.contact-list {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.map {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.success-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 20px;
+}
+
+.success-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.success-message {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #008000;
+}
+
+.custom-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.delete-account-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-account-button:hover {
+  background-color: darkred;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .contact-list,
+  .map {
+    width: 100%;
+  }
+
+  .contact-list {
+    margin-bottom: 20px;
+  }
+
+  .logout-button {
+    margin: 10px 0 20px 0;
+    width: 90%;
+  }
+}
